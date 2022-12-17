@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Twitter Automation" parallel="tests" thread-count="2">
+
+    <listeners>
+    </listeners>
+
+    <test name="Twitter Automation Testing On Android">
+        <parameter name="os" value="${os}" />
+        <classes>
+            <class name="tests.NewTweetTest"/>
+            <class name="tests.DeleteTweetTest"/>
+            <class name="tests.FollowAccountTest"/>
+        </classes>
+    </test> <!-- configuration annotation Test -->
+</suite> <!-- Suite -->
